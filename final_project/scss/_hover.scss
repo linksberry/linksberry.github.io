@@ -1,0 +1,33 @@
+.menuNav__item:hover {
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+.header__btn:hover{
+  background: #061e37;
+  cursor: pointer;
+  user-select: none;
+}
+.header__btn:active { background: rgba(6, 30, 55, 0.7); }
+.button-blue:active {
+  background:linear-gradient(180deg, rgba(6, 30, 55, 0.91), rgb(9, 33, 64));
+  border: #ffffff 1px solid;
+  border-radius:3px;
+}
+.button-white:active {
+  background: #f3f3f3;
+  border: #061e37 1px solid;
+  border-radius:3px;
+}
+.button-green:active {
+  background: linear-gradient(180deg, rgba(19,207,167,1) 0%, rgba(35,231,186,1) 49%, rgba(10,207,171,1) 100%);
+  border-radius:3px;
+}
+.footerInfo {
+  .footerInner{
+    &__item {
+      a:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

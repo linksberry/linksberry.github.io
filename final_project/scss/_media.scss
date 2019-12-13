@@ -1,0 +1,151 @@
+@media screen and (max-width:1024px) {
+  header {
+    height:auto;
+    }
+  .header {
+
+  }
+  .header__menu{
+    display: none;
+  }
+  .header__burger {
+    display: block;
+  }
+  .headerContent {
+    flex-direction: column;
+    padding-top: 40px;
+    &__left {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  .boxListsWrap {
+    width: 75%;
+  }
+}
+@media screen and (max-width:950px) {
+  .section__top {
+    padding-top: 30px;
+    .topDescription {
+      width: 80%;
+    }
+  }
+  .section__center {
+    flex-direction: column;
+    .centerContent{
+      padding: 20px 0;
+      &__icon {
+        height: auto;}
+    }
+  }
+  .section__bottom {
+    width: 90%;
+    height: auto;
+    flex-flow: column;
+    margin: 0 auto;
+    padding-top: 30px;
+    .bottomContent {
+      width: 100%;
+      padding: 20px 0;
+    }
+  }
+  .boxListsWrap {
+    width: 100%;
+  }
+}
+@media screen and (max-width:700px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .leftText{
+      padding-top: 30px;
+
+    }
+  }
+  .section__right{
+    margin: 0;
+  }
+  .footer {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+  }
+  .menuNav {
+    display: flex;
+    flex-direction: column;
+    &__item {
+      padding-bottom: 10px;
+      margin: 0;
+    }
+  }
+  .footerInfo {
+    flex-direction: column;
+    .section__social-footer {
+      justify-content: flex-start;
+      padding-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width:650px) {
+  .headerContent__left {
+    .leftTitle {
+      font-size: 2.3rem;
+      padding-bottom: 10px;
+    }
+
+    .leftText {
+      text-align: justify;
+    }
+  }
+  .leftBtn {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+    .boxLists {
+      .boxListsContent {
+        flex-direction: column;
+        .boxListsImg {
+          margin: 0;
+        }
+        .boxListsText {
+          &__one {
+            padding-top: 25px;
+          }
+        }
+      }
+    }
+  .section__form {
+    max-width: 280px;
+    .form {
+      justify-content: center;
+      &__input:nth-child(odd) {
+        margin-right: 0;
+      }
+
+      &__textarea {
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width:500px) {
+  .blockContent__avatar {
+    display: none;
+  }
+  .bannerPhoto__avatar{
+    display: none;
+  }
+  .bannerPhoto__avatar-active{
+    display: block;
+  }
+}
+

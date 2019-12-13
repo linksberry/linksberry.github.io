@@ -1,0 +1,17 @@
+
+.burger{
+  display: flex;
+  min-width: 58px;
+  min-height: 43px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  cursor: pointer;
+  &__line {
+    width: 36px;
+    height: 3px;
+    background: white;
+    margin: 3px;}
+}
+

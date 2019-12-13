@@ -1,0 +1,85 @@
+$mainColor:#061e37;
+
+.listWrapper {
+  width: 55%;
+  .checkLists {
+    position:relative;
+    width: 100%;
+    color: $mainColor;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+    &__input {
+      position:absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+    &__title {
+      position: relative;
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 1.2rem;
+      padding: 0 25px;
+      cursor: pointer;
+      &-1::before{
+        padding-right: 25px;
+        content: url("../img/icon-list-1.png");
+      }
+      &-2::before{
+        padding-right: 25px;
+        content: url("../img/icon-list-2.png");
+      }
+      &-3::before{
+        padding-right: 25px;
+        content: url("../img/icon-list-3.png");
+      }
+      &-4::before{
+        padding-right: 25px;
+        content: url("../img/icon-list-4.png");
+      }
+      &-5::before{
+        padding-right: 25px;
+        content: url("../img/icon-list-5.png");
+      }
+      &::after{
+        position: absolute;
+        content: url("../img/arrow_drop_down.png");
+        margin-left: 10px;
+        right: 25px;
+      }
+    }
+    &__content {
+        overflow: hidden;
+        max-height: 0;
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 2em;
+        margin: 0 25px;
+        text-align: justify;
+        transition: max-height .3s;
+        .checkListsContent {
+          padding: 1em 0;
+          display: flex;
+          align-items: center;
+        .checkListsImg {
+          border-radius: 3px;
+          max-width: 250px;
+          margin: 0 25px 0 0;
+        }
+        .checkListsText {
+            &__one {
+              padding-bottom: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+}
+  .checkLists__input:checked ~ .checkLists__content {
+    max-height: 100vh;
+  }
+  .checkLists__input:checked + .checkLists__title::after{
+    transform: rotate(180deg);
+  }

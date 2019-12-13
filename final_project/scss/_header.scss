@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.logoImg {
+  user-select: none;
+}
+.logoText {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 11px;
+  color:white;
+  &__thin {
+    font-weight: 200;
+  }
+}
+
+.menuNav__item {
+  font-weight: 600;
+  margin-left: 50px;
+}
+.menuNav__item-active {
+  color:#082e4e;
+  border-bottom: #082e4e solid 3px;
+}
+
+.header__btn {
+  display: block;
+  width: 80px;
+  height: 25px;
+  border: white solid 1px;
+  border-radius: 1px;
+  text-align: center;
+  line-height: 25px;
+}
+.headerBtnItem {
+  font-weight: 400;
+}
